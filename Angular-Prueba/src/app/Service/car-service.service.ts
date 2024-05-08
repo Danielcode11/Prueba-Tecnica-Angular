@@ -27,14 +27,14 @@ export class CarServiceService {
    }
 
    markSold(cardId: string) {
-    this.cars = this.cars.map( car => car.id === carId? {
+     this.cars = this.cars.map( car => car.id === carId? {
 
       ...car, sold: true } :car);
       localStorage.setItem('cars', JSON.stringify(this.cars))
    }
 
    markAvailable(cardId: string) {
-    this.cars = this.cars.map( car => car.id === carId? {
+     this.cars = this.cars.map( car => car.id === carId? {
 
       ...car, sold: false } :car);
       localStorage.setItem('cars', JSON.stringify(this.cars))
