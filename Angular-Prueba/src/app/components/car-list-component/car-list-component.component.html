@@ -1,0 +1,7 @@
+
+<div *ngFor="let car of cars">
+    <h3>{{car.name}}</h3>
+    <p>Sold: {{car.Sold ? 'yes' : 'No'}}</p>
+    <button (click)="markSold(car.id)"> mark as sold </button>
+    <button (click)="markAvailable(car.id)">mark as Available</button>
+</div>

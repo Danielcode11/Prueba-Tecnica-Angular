@@ -1,0 +1,9 @@
+<form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+    <label>
+        name:
+        <input type="text">
+        formControlName="name"
+    </label>
+
+    <button type="submit"> Add </button>
+</form>
